@@ -1,0 +1,71 @@
+<head>
+<meta charset="utf-8">
+<title>Voting</title>
+	<link href="soundlairstyles.css" rel="stylesheet" type="text/css">
+<meta name="keywords" content="SoundLair, Music, Pop, Rock, EDM, Voting, Fan interaction, Content Creators">
+<meta name="description" content="SoundLair is a new music sharing website with a unique twist! All the music is recommended by the users themselves!">
+
+</head>
+
+<body>
+<div class="container">
+<header class="banner"><img src="Assets/soundlairbanner.png" width="760" height="100" alt="SoundLair Banner image">
+  </header>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a class="activetab" href="voting.html">Vote!</a></li>
+  <li><a href="sotd.html">SOTD</a></li>
+  <li><a href="weekly_mix.html">Weekly Mix</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+</ul>
+
+<h1 class="welcome">
+Welcome To SoundLair!
+</h1>
+
+<div class="form_container">
+  <form>
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="firstname" placeholder="First Name" required>
+
+    <label for="last_name">Last Name</label>
+    <input type="text" id="last_name" name="lastname" placeholder="Last Name" required>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Enter an Email Address" required>
+
+    <label for="Song_choice">Vote for Your Favorite Song of the Day!</label>
+    <select id="song_choice" name="songchoice">
+      <option value="song1">Dreamers - Sweet Disaster</option>
+      <option value="song2">Andy Black - We Don't Have to Dance</option>
+      <option value="song3">guccihighwaters - expectations</option>
+    </select>
+
+    <input type="checkbox" id="newsletter" name="newsletter" value="Yes">
+  <label for="newsletter">Would you like to Subscribe to our Newsletter?</label><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div class="form_container2">
+  <form>
+  	<h1 class="form_heading"> Vote for Tomorrow's Songs of the Day! </h1>
+    <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+
+  <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+</body>

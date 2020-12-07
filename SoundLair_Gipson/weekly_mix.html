@@ -1,0 +1,91 @@
+<head>
+<meta charset="utf-8">
+<title>Weekly Mix</title>
+	<link href="soundlairstyles.css" rel="stylesheet" type="text/css">
+<meta name="keywords" content="SoundLair, Music, Pop, Rock, EDM, Voting, Fan interaction, Content Creators">
+<meta name="description" content="SoundLair is a new music sharing website with a unique twist! All the music is recommended by the users themselves!">
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+</script>
+</head>
+
+<body>
+<div class="container">
+<header class="banner"><img src="Assets/soundlairbanner.png" width="760" height="100" alt="SoundLair Banner image">
+  </header>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="voting.html">Vote!</a></li>
+  <li><a href="sotd.html">SOTD</a></li>
+  <li><a class="activetab" href="weekly_mix.html">Weekly Mix</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+</ul>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade" style="display: block;">
+    <img src="Assets/headphones_1024.jpg" style="width:100%" alt="Girl Listening to Music 1">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Assets/how-to-be-happy-by-listening-to-music-blog-1080x608.jpg" style="width:100%" alt="Girl Listening to Music 2">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Assets/woman-listening-to-music-720x320.jpg" style="width:100%" alt="Girl Listening to Music 3">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<h1 class="welcome">
+Welcome To SoundLair!
+</h1>
+
+<div class="funfact">
+  <h2>Music Fact of the Day!</h2>
+<p>Did you know that music has the ability to help plants grow? As farfetched as that may sound, a study in 2007 confirmed that this was true! Researchers in South Korea, led by Mi-Jeong Jeong of the National Institute of Agricultural Technology, discovered that sounds at both 125hz and 250hz contributed to the production of certain genes in the plants that let them grow faster! Check out more <a class="clicklinks" href="#" target="_blank">here!</a></p>
+</div>
+
+<div class="textcontent">
+<p>SoundLair is an exciting new music platform built to service all of your music needs. Music is entirely chosen by user responses, something that cannot be found on any other music sharing website! Looking for some new tunes to spend an afternoon rocking out to? Check out our <a class="clicklinks" href="#" target="_blank">Daily Mix</a> to find a list of songs curated exclusively by our dedicated SoundLair community!</p>
+
+<p>For those who are looking for something new to spice up your day, please check out our <a class="clicklinks" href="#" target="_blank">Song of the Day</a> tab to see what song our community deems the most interesting today! If, however, the song of the day isn't to your taste, take control by <a class="clicklinks" href="#" target="_blank">voting</a> for tomorrow's song of the day! Either way, there is plenty on SoundLair to keep your music taste evolving. You'll never get tired of listening to the same old tracks on repeat ever again!</p>
+
+<p>With the COVID-19 Pandemic still such a large issue affecting our daily lives - sometimes it's good to just be able to kick back, relax, and discover some new music! SoundLair is dedicated to curating good music that our users love. We have partnered with music streaming services such as Spotify, Apple Music, and YouTube Music, to provide you all with the tools you need to find - and listen - to your new favorite songs. We hope you enjoy!</p>
+</div>
+</div>
+</body>
